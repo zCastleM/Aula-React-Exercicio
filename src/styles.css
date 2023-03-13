@@ -19,13 +19,14 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    color: #fff;
 }
 nav {
     display: flex;
     justify-content: center;
 }
 footer {
-    background-color: #fff;
+    background-color: #004b0e;
     bottom: 0px;
     position: fixed;
     width: 100vw;
@@ -37,6 +38,17 @@ footer {
     justify-content: center;
 }
 .post1 {
+    text-align: center;
     margin-left: 10px;
+    border: black solid 2px;
+    border-radius: 6px;
+    padding: 6px;
+    width: 200px;
+    height: 150px;
+}
+.post1:hover {
+    background-color: #fff;
+    margin-left: 10px;
+    border-radius: 6px;
     border: black solid 2px;
 }
