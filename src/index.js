@@ -1,8 +1,8 @@
 // Trazer de outro arquivo/biblioteca alguma função ou variável
 import { createRoot } from "react-dom/client";
-import { Titulo } from "./components/Titulo";
-import { Mensagem } from "./components/Mensagem";
-import { Nav } from "./components/Nav";
+import { Blog } from "./components/Blog";
+import { Footer } from "./components/Footer";
+import { Postagem } from "./components/Postagem";
 import './styles.css';
 
 // Selecionando a div na página
@@ -14,10 +14,8 @@ const root = createRoot(rootElement); // A div root será a base da aplicação
 
 root.render(
     <div>
-        <header>
-            <Nav></Nav>
-        </header>
-        <Titulo></Titulo>
-        <Mensagem/>
+        <Postagem></Postagem>
+        <Blog></Blog>
+        <Footer></Footer>
     </div>
 );
