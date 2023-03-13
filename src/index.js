@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Trazer de outro arquivo/biblioteca alguma função ou variável
+import { createRoot } from "react-dom/client";
+import { Titulo } from "./components/Titulo";
+import { Mensagem } from "./components/Mensagem";
+import { Nav } from "./components/Nav";
+import './styles.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Selecionando a div na página
+const rootElement = document.getElementById("root");
+
+// A div root será a base da aplicação
+const root = createRoot(rootElement); // A div root será a base da aplicação
+
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div>
+        <header>
+            <Nav></Nav>
+        </header>
+        <Titulo></Titulo>
+        <Mensagem/>
+    </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
