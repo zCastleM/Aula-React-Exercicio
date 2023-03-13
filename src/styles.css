@@ -58,3 +58,9 @@ footer {
         display: grid;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .blog {
+        display: grid;
+    }
+}

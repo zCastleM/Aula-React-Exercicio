@@ -14,7 +14,6 @@ const root = createRoot(rootElement); // A div root será a base da aplicação
 
 root.render(
     <div>
-        <Postagem></Postagem>
         <Blog></Blog>
         <Footer></Footer>
     </div>
